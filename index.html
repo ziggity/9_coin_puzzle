@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>9 coin puzzle </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Old as dirt, 9 coin puzzle is often found in the interview question lineup!</h1>
+      <p>There are 9 stones. One of them is either heavier or lighter than the others. You can use the 2 sided scale 3 times to find the answer.</p>
+      <span id="0" class="stone">Stone 1</span>
+      <span id="1" class="stone">Stone 2</span>
+      <span id="2" class="stone">Stone 3</span>
+      <span id="3" class="stone">Stone 4</span>
+      <span id="4" class="stone">Stone 5</span>
+      <span id="5" class="stone">Stone 6</span>
+      <span id="6" class="stone">Stone 7</span>
+      <span id="7" class="stone">Stone 8</span>
+      <span id="8" class="stone">Stone 9</span>
+
+      <div class="row">
+        <div id="left-side" class="col-sm-6">
+        </div>
+        <div id="right-side" class ="col-sm-6">
+        </div>
+      </div>
+      <span id="left-heavier">The left side is heavier</span>
+      <span id="left-lighter">The left side is lighter</span>
+      <span id="right-heavier">The right side is heavier</span>
+      <span id="right-lighter">The right side is lighter</span>
+      <div id="equal">The weights are equal</div>
+      <button type="button" id="weigh" class="btn btn-default">Weigh</button>
+      <div id="scale-used">The scale has been used 3 times</div>
+      <form id="answer-submit">
+        <div class="form-group">
+          <label for="answerInput">What is your answer?</label><br>
+          <input type="number" class="from-control" id="answerInput">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <div id="correct">You are correct!</div>
+      <div id="incorrect">Sorry, the odd stone out was stone number <span id="oddStoneOut"></span>.</div>
+    </div>
+  </body>
+</html>
